@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "application_health",
+    "slug": "application_health",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
