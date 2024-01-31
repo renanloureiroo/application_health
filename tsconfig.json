@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "jsx": "react-native",
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+  },
+  "extends": "expo/tsconfig.base",
+}

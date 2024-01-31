@@ -8,7 +8,14 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
   <!-- END OPTIONAL PERMISSIONS -->
-
+  <!-- ADD LIBRARY HERE -->
+  <!-- REACT_NATIVE_RECORD_SCREEN -->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+  <!-- If you intend to use the microphone -->
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <!-- REACT_NATIVE_RECORD_SCREEN  END-->
   <queries>
     <!-- Support checking for http(s) links via the Linking API -->
     <intent>
