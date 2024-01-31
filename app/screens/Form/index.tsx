@@ -1,11 +1,12 @@
 import React from 'react'
 import { Text, type TextStyle, type ViewStyle } from 'react-native'
 
-import { Screen, Box } from 'app/components'
+import { Screen, Box, Input } from 'app/components'
 import { colors } from 'app/styles/theme'
 
 export const FormScreen = () => (
   <Screen>
+    <Input placeholder="Testando" />
     <Box style={$box}>
       <Text style={$title}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
@@ -31,4 +32,5 @@ export const $box: ViewStyle = {
   backgroundColor: colors.primary,
   padding: 24,
   borderRadius: 8,
+  marginTop: 16,
 }
