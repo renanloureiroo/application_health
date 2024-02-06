@@ -7,14 +7,14 @@ import {
   ViewProps,
   ViewStyle,
 } from 'react-native'
-import { Colors, colors } from '../styles/theme/colors'
+import { colors } from '../styles/theme/colors'
 import { Areas, useSafeArea } from '../hooks/useSafeArea'
 import { StatusBar, StatusBarProps } from 'expo-status-bar'
 
 const isIos = Platform.OS === 'ios'
 
 interface ScreenProps {
-  backgroundColor?: Colors
+  backgroundColor?: string
   style?: ViewProps['style']
   children: ReactNode
   safeAreas?: Areas[]
@@ -25,7 +25,7 @@ export const Screen: FC<ScreenProps> = (props) => {
   const {
     style: $overrideStyles,
     children,
-    backgroundColor = 'background',
+    backgroundColor = colors.neutral[50],
     safeAreas = ['top', 'bottom'],
     statusBarProps: overrideStatusBarProps,
   } = props

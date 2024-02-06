@@ -1,18 +1,8 @@
-import {
-  forwardRef,
-  useImperativeHandle,
-  useRef,
-  Ref,
-  Component,
-  useState,
-} from 'react'
+import { forwardRef, useImperativeHandle, useRef, Ref, useState } from 'react'
 import {
   TextInput,
   TextInputProps as RNTextInputProps,
-  TextStyle,
   View,
-  ViewStyle,
-  Text,
 } from 'react-native'
 import { Root } from './Root'
 import { InputBase } from './InputBase'

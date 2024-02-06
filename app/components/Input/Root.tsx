@@ -18,8 +18,6 @@ export const Root = forwardRef(
     }: RootProps,
     ref: Ref<View>,
   ) => {
-    console.log('Focused: ', focused)
-
     const $rootStyles = [
       $root,
       focused && $focused,
@@ -38,7 +36,7 @@ export const Root = forwardRef(
 const $root: ViewStyle = {
   borderWidth: 1,
   borderRadius: 4,
-  borderColor: colors.primary,
+  borderColor: colors.primary[400],
   padding: spacing.m,
   flexDirection: 'row',
   alignItems: 'center',

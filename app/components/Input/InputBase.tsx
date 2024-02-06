@@ -19,7 +19,7 @@ export const InputBase = forwardRef(
     return (
       <RNTextInput
         ref={ref}
-        placeholderTextColor={colors.placeholder}
+        placeholderTextColor={colors.neutral[300]}
         {...rest}
         style={$inputStyles}
       />
@@ -29,6 +29,6 @@ export const InputBase = forwardRef(
 
 const $input: TextStyle = {
   fontSize: 16,
-  color: colors.text,
+  color: colors.neutral[500],
   flex: 1,
 }
