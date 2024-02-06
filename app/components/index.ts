@@ -1,3 +1,2 @@
-export * from './Box'
-export * from './Screen'
-export * from './Input'
+export * from './Avatar'
+export * from './HomeHeader'

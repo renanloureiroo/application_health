@@ -7,9 +7,10 @@ import {
   ViewProps,
   ViewStyle,
 } from 'react-native'
-import { colors } from '../styles/theme/colors'
-import { Areas, useSafeArea } from '../hooks/useSafeArea'
+
 import { StatusBar, StatusBarProps } from 'expo-status-bar'
+import { Areas, useSafeArea } from 'app/hooks/useSafeArea'
+import { colors } from 'app/styles/theme'
 
 const isIos = Platform.OS === 'ios'
 
@@ -66,4 +67,5 @@ const $root: ViewStyle = {
 
 const $container: ViewStyle = {
   flex: 1,
+  justifyContent: 'flex-start',
 }
